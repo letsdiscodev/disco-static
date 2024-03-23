@@ -15,7 +15,8 @@ HTML = f"""<!DOCTYPE html>
 </head>
 <body>
     <h1>Hello!</h1>
-    <p>This is the commit {COMMIT}
+    <p>This is the commit {COMMIT}</p>
+    <p>DIST_DIR: {DIST_DIR}</p>
 </body>
 </html>"""
 
