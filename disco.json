@@ -3,7 +3,6 @@
     "services": {
         "web": {
             "type": "static",
-            "publicPath": "/this-is-public",
             "image": "python:3.12.2",
             "command": "python generate.py"
         }
