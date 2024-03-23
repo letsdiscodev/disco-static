@@ -2,11 +2,9 @@ import os
 
 print("Generating site")
 
-REPO_PATH = os.environ.get("DISCO_REPO_PATH")
 DIST_DIR = os.environ.get("DISCO_DIST_PATH")
 COMMIT = os.environ.get("DISCO_COMMIT")
 
-assert REPO_PATH is not None
 assert DIST_DIR is not None
 assert COMMIT is not None
 
