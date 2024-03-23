@@ -5,7 +5,7 @@
             "type": "static",
             "publicPath": "/dist",
             "image": "python:3.12.2",
-            "generator": "python generate.py"
+            "command": "python generate.py"
         }
     }
 }
