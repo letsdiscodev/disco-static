@@ -1,12 +1,9 @@
 import os
+import randomname
 
 print("Generating site")
 
-DIST_DIR = os.environ.get("DISCO_DIST_PATH")
-COMMIT = os.environ.get("DISCO_COMMIT")
-
-assert DIST_DIR is not None
-assert COMMIT is not None
+DIST_DIR = "dist" # /code/dist
 
 HTML = f"""<!DOCTYPE html>
 <html>
@@ -15,8 +12,8 @@ HTML = f"""<!DOCTYPE html>
 </head>
 <body>
     <h1>Hello!</h1>
-    <p>This is the commit {COMMIT}</p>
-    <p>DIST_DIR: {DIST_DIR}</p>
+    <p>This is a random name for this deployment:</p>
+    <p>{randomname.get_name()}</p>
 </body>
 </html>"""
 

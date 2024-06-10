@@ -2,9 +2,7 @@
     "version": "1.0",
     "services": {
         "web": {
-            "type": "static",
-            "image": "python:3.12.2",
-            "command": "python generate.py"
+            "type": "generator"
         }
     }
 }
