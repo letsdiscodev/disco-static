@@ -1,6 +1,6 @@
 FROM python:3.12.3
-WORKDIR /code
-COPY requirements.txt /code/requirements.txt
+WORKDIR /site
+COPY requirements.txt /site/requirements.txt
 RUN pip install -r requirements.txt
-COPY . /code/.
+COPY . /site/.
 RUN python generate.py
